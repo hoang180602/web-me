@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -206,14 +207,14 @@ html {
 }
 
 
-#content #content-section{
+#content .content-section{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
 }
 
-#content-section .content-heading {
+.content-section .content-heading {
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -221,7 +222,7 @@ html {
     letter-spacing: 3px;
 }
 
-#content-section .content-sub-heading {
+.content-section .content-sub-heading {
     font-size: 15px;
     text-align: center;
     opacity: 0.6;
@@ -230,7 +231,7 @@ html {
     font-style: italic;
 }
 
-#content-section .about-text {
+.content-section .about-text {
     font-size: 15px;
     text-align: justify;
     margin-top: 15px;
