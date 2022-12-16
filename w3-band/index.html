@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" href="./assets/img/favion/favion1.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets//fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More 
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -36,6 +37,11 @@
                 <i class="search-icon ti-search">
                 </i>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            
             <!--End Search-->
             
         </div>
@@ -206,10 +212,12 @@
     </div>
 
     <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const modalClose = document.querySelector('.js-modal-close');
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
 
         function showBuyTickets() {
             modal.classList.add('open')
@@ -224,6 +232,27 @@
             buyBtn.addEventListener('click', showBuyTickets)
         }
         
+
+        // Dong mo mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === 47 ;
+            if(isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //Tu dong dong menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
+
         modalClose.addEventListener('click', hideBuyTickets)
        
         modal.addEventListener('click', hideBuyTickets)
@@ -231,6 +260,7 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
 </script>
 
 </body>

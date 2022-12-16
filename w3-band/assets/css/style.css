@@ -102,6 +102,7 @@ html {
     height: 46.5px;
     background-color: #000;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -162,20 +163,32 @@ html {
     font-size: 14px;
 }
 
-#header .search-btn {
+#header .search-btn, #header .mobile-menu-btn {
     float: right;
     padding: 0 23px;
-    cursor: pointer;
+    
     
 }
 
 #header .search-btn:hover{
     background-color: #f44336;
+    cursor: pointer;
 }
 
-#header .search-icon {
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .search-icon,
+#header .menu-icon {
     color: #fff;
+    font-size: 20px;
     line-height: 46.5px;
+    
 
 }
 
@@ -209,9 +222,12 @@ html {
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .content-section .content-heading {
@@ -491,3 +507,4 @@ html {
         opacity: 1;
     }
 }
+
