@@ -41,6 +41,8 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -84,6 +86,10 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt32 {
+    margin-top: 32px !important;
 }
 
 .pull-right {
@@ -262,7 +268,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 47px;
+    margin-top: 32px;
 }
 
 
@@ -312,7 +318,7 @@ html {
 }
 
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -354,6 +360,15 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.4;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i {
