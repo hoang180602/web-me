@@ -47,7 +47,7 @@ html {
 
 .banner {
     position: relative;
-    background: url(/assets/img/banner/banner1.jpg) top center / cover no-repeat;
+    background: url('../img/banner/banner1.jpg') top center / cover no-repeat;
     padding-top: 45%;
 }
 
