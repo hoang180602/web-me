@@ -259,6 +259,9 @@
 
 .auth-form {
     width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .auth-form__container {
@@ -321,4 +324,38 @@
 
 .auth-form__controls {
     margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.auth-form__controls-back {
+    margin-right: 8px;;
+}
+
+.auth-form__social {
+    background-color: #F5F5F5;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 20px;
+}
+
+.auth-form__social-icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__social--facebook {
+    background-color: #3A5A98;
+    color: var(--white-color);
+}
+
+
+.auth-form__socials-title {
+    margin: 0 36px;
+    
+}
+
+.auth-form__social--google {
+    color: #666;
+}
+
