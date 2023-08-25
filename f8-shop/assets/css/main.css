@@ -1193,3 +1193,8 @@ i.home-product-item__heart-icon-fill {
     position: relative;
     top: 2px;
 }
+
+.pagination--margin-top {
+    margin-top: 38px;
+    margin-left: 32px;
+}
