@@ -1,0 +1,82 @@
+.header {
+    background-color: #1c1c1c;
+    color: #fffff1;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 46px;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.header__navbar-left {
+    display: flex;
+}
+
+.header__navbar-item-text {
+    padding-right: 20px;
+}
+
+.header__navbar-item-icon {
+    color: #3fd0d4;
+    margin-right: 10px;
+}
+
+.header__navbar-item {
+    text-decoration: none;
+    color: #fffff1;
+}
+
+.header__navbar-item:hover,
+.header__navbar-contact-icon:hover {
+    color: #3fd0d4;
+}
+
+.header__navbar-right {
+    display: flex;
+    line-height: 46px;
+    list-style: none;
+}
+
+.header__navbar-contact {
+    padding-right: 20px;
+}
+
+.header__navbar-contact-icon {
+    padding-right: 10px;
+}
+
+.header__navbar-langue {
+    background-color: #3abdc1;
+}
+
+.header__navbar-langue a{
+    text-decoration: none;
+    color: #fffff1;
+    padding: 0 30px 0 30px;
+    display: inline-block;
+}
+
+.header__navbar-langue-icon {
+    font-size: 0.7rem;
+}
+
+
+.header__navbar-avt {
+    background-color: #3fd0d4;
+}
+
+.header__navbar-avt-icon {
+    padding: 0 14px;
+    color: #fffff1;
+}
+
+.header__navbar-langue-list-item {
+}
+
+.header__navbar-langue-list {
+    
+}
