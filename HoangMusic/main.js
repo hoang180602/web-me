@@ -78,9 +78,9 @@ const app = {
         },
         {
             name: 'Cắt Đôi Nỗi Sầu',
-            singer: 'Tân Duy Tân',
+            singer: 'Buồng Phòng Band',
             path: './music/catdoinoisau.mp3',
-            image: './img/catdoinoisau.jfif',
+            image: './img/catdoinoisauu.jpg',
             time: 203,
             lyrics: `Cắt đôi nỗi sầu
             Anh buông tay cắt đôi nỗi sầu
@@ -133,9 +133,9 @@ const app = {
         },
         {
             name: 'Đâu Ai Dám Hứa',
-            singer: 'Sơn Tùng MTP',
+            singer: 'Paracel Band',
             path: './music/dauaidamhua.mp3',
-            image: './img/dauaidamhua.jfif',
+            image: './img/dauaidamhuaa.jpg',
             time: 224,
             lyrics: `Chiều dần buông tan trường anh đến để chờ nàng thơ đi học ra 
             Thì ra em đang ngồi trên chiếc xe đạp của ai không phải anh
@@ -179,9 +179,9 @@ const app = {
         },
         {
             name: 'Hit Me Up',
-            singer: 'Binz',
+            singer: 'Hoangz',
             path: './music/hitmeup.mp3',
-            image: './img/hitmeup.jfif',
+            image: './img/hoangmeup.jpg',
             time: 336,
             lyrics: `Phone cho anh những lúc em một mình
             Sau đó làm gì thì gặp rồi sẽ biết
@@ -220,9 +220,9 @@ const app = {
         },
         {
             name: 'Lệ Lưu Ly',
-            singer: 'Mỹ Tâm',
+            singer: 'Parze Ocean Band',
             path: './music/leluuly.mp3',
-            image: './img/leluuly.jfif',
+            image: './img/anh em.jpg',
             time: 202,
             lyrics: `Em có gì đâu ngoài những vết thương sâu
             Yêu bao nhiêu lâu mà vẫn cứ thấy đau
@@ -334,9 +334,9 @@ const app = {
         },
         {
             name: 'GƯƠNG MẶT LẠ LẪM ',
-            singer: 'Mr Siro',
+            singer: 'Bố Đợ ft Các Cháu',
             path: './music/motbuocyeuvandamdau.mp3',
-            image: './img/motbuocyeuvandamdau.jfif',
+            image: './img/nhacchaybo.jpg',
             time: 299,
             lyrics: `(Hôm nay)
             (Dành hết lầm lỗi để chia tay)
@@ -384,9 +384,9 @@ const app = {
         }
         ,{
             name:'BẠN ĐỜI',
-            singer: 'Karik',
+            singer: 'Parze Ocean Band',
             path: './music/bandoi.mp3',
-            image: './img/bandoi.jpg',
+            image: './img/fo2.png',
             time: 247,
             lyrics: `Kiếp trước có lẽ 2 ta yêu nhau mà chẳng thể thành vợ chồng
             Nghĩ thoáng nên mai ra sao tụi mình cũng đều hài lòng
@@ -460,9 +460,9 @@ const app = {
         }
         ,{
             name: 'GẤP ĐÔI YÊU THƯƠNG',
-            singer: 'Tuấn Hưng',
+            singer: 'Hoàng KCIM ft Hồ Ngọc Thảo',
             path: './music/gapdoiyeuthuong.mp3',
-            image: './img/gapdoiyeuthuong.jpg',
+            image: './img/gapdoi.jpg',
             time: 302,
             lyrics: `Nói anh nghe đi, thế giới này
             đã làm em tổn thương nhiều như thế nào
@@ -486,9 +486,9 @@ const app = {
         }
         ,{
             name:'KHÓC CÙNG EM',
-            singer:'Mr Siro',
+            singer:'Mr Hoàng ft Huynh MTP',
             path: './music/khoccungem.mp3',
-            image:'./img/khoccungem.jpg',
+            image:'./img/khoccungemm.jpg',
             time: 251,
             lyrics:`Cuộc gọi đến
             Và như mọi khi là lặng nghe em khóc
@@ -760,6 +760,7 @@ const app = {
                 _this.loadCurrentSong()
                 audio.play()
                 _this.render()
+                console.log(e.target)
                 
             }  
             console.log($('.playlistOption p'))
