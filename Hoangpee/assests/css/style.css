@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.app {
+    width: 100%;
+    background-color: #f6422e;
+}
+
+.header {
+    width: 1200px;
+    margin:0 auto;
+}
+
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    height: 34px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.header__navbar ul li:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navbar--left {
+
+}
+
+/*Event hover on "tai ung dung" */
+.navbar--left ul .dowload{
+    position: relative;
+}
+.navbar--left ul .dowload--qr{
+    background-color: black;
+    width: 180px;
+    height: 200px;
+    top: 24px;
+    position: absolute;
+}
+.navbar--left ul .dowload--qr:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+.navbar--left ul li {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.navbar--left ul li:last-child i{
+    padding:  0 2px;
+}
+
+.navbar--left ul li:last-child:hover {
+    opacity: 1;
+    cursor: text;
+}
+
+.navbar--left ul li:last-child i:hover {
+    cursor: pointer;
+}
+
+.navbar--left ul li:last-child::after {
+    display: none;
+}
+.navbar--left ul li::after {
+    content: "";
+    display: block;
+    width: 0.4px;
+    height: 12px;
+    background-color: white;
+    margin: 10px 0;
+    position: absolute;
+    top: -8px;
+    right: -3px;
+    opacity: 0.3;
+}
+
+
+.navbar--right {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar--right ul li{
+    padding: 0 10px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar--right ul:first-child li i{
+    padding-right: 4px;
+}
+
+.navbar--right ul:last-child li{
+    position: relative;
+}
+
+.navbar--right ul:last-child li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    top: 4px;
+    right: -2px;
+    opacity: 0.3;
+
+
+}
+
+.navbar--right ul:last-child li:last-child:after{
+    display: none;
+}
+
+.header__search{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+.header__search .logo svg {
+    width: 162px;
+    height: 150px;
+}
+
+.header__search .logo svg:hover {
+    cursor: pointer;
+}
+
+.header__search  .search {
+    display: flex;
+    width: 840px;
+    height: 40px;
+    align-items: center;
+    background-color: white;
+    /* justify-content: flex-end; */
+}
+
+.header__search  .search input {
+    height: 34px;
+    width: 754px;
+    margin-left: 20px;
+    margin-right: 2px;
+    border: none;
+}
+
+.header__search  .search .button__search {
+    background-color: rgb(246,66,46);
+    padding: 0 22px;
+    height: 34px;
+}
+
+.header__search  .search .button__search:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.header__search  .search .button__search i {
+    line-height: 34px;
+    color: white;
+}
+
+.header__search .cart {
+    padding: 0 60px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__search .cart i {
+    font-size: 26px;
+    color: white;
+}
+
+.header__search .cart i:hover {
+    cursor: pointer;
+} 
+
+
+
+
